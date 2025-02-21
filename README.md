@@ -7,7 +7,7 @@
   <!-- - ⚡ -->
   <!-- - 🏷️ -->
 
-> To do :
+> #### To do :
 
 - [ ] completing Lesson 1
 - [ ] completing Lesson 2

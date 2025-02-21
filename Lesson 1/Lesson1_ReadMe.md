@@ -1,3 +1,5 @@
 ## 🔖 Note :
-In C for declaration you need allocation first
-** **
+
+###### In C for declaration you need allocation first
+
+---
