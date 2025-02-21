@@ -1,15 +1,13 @@
 ## <h1 align="center"> C language Tutorial </h1>
 
----
+👋 Hi, my C learning process will be stored here in this Repo
 
-👋 Hi,
-    my C learning process will be stored here in this Repo
-
--
 - 🚀 start date : 2/20/25
   <!-- - 🌱 -->
   <!-- - ⚡ -->
   <!-- - 🏷️ -->
+
+> To do :
 
 - [ ] completing Lesson 1
 - [ ] completing Lesson 2
