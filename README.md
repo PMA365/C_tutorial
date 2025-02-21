@@ -27,3 +27,15 @@
 ### 🧰 My Tools :
 
         Vs code
+        <div>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" style="margin-right: 40px">
+                <img
+                align="left"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                alt="vscode"
+                width="40"
+                height="40"
+                />
+
+            </a>
+        </div>
