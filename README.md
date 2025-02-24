@@ -29,28 +29,31 @@
 Vs code
 
 <div>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-  <img
-    style="margin-right: 25px;"
-    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
-    alt="vscode"
-    width="40"
-    height="40"
-  />
+  
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" style="margin-right: 40px">
+    <img
+      align="left"
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+      alt="vscode"
+      width="40"
+      height="40"
+    />
   </a>
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=franneck94.c-cpp-runner" target="_blank" rel="noreferrer" >
-  <img  
-  style="margin-right: 25px;"
-  alt="C/C++ Runner Extension" src="https://franneck94.gallerycdn.vsassets.io/extensions/franneck94/c-cpp-runner/9.4.10/1739086200367/Microsoft.VisualStudio.Services.Icons.Default" width="40"
-  height="40">
+  <a href="https://marketplace.visualstudio.com/items?itemName=franneck94.c-cpp-runner" target="_blank" rel="noreferrer" style="margin-right: 40px">
+    <img  
+      align="left"
+      alt="C/C++ Runner Extension" src="https://franneck94.gallerycdn.vsassets.io/extensions/franneck94/c-cpp-runner/9.4.10/1739086200367/Microsoft.VisualStudio.Services.Icons.Default" width="40"
+      height="40"
+    />
   </a>
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank" rel="noreferrer" >
-  <img 
-  style="margin-right: 25px;"
-  class="image-display" alt="C/C++" src="https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.24.1/1739493821277/Microsoft.VisualStudio.Services.Icons.Default" width="40"
-  height="40">
+  <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank" rel="noreferrer" style="margin-right: 40px" >
+    <img 
+      align="left"
+      class="image-display" alt="C/C++" src="https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.24.1/1739493821277/Microsoft.VisualStudio.Services.Icons.Default" width="40"
+      height="40"
+    />
   </a>
   
 </div>
