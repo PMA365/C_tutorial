@@ -57,8 +57,12 @@ Size of array: 40 bytes
 Size of structure: 8 bytes
 
 ---
+
 > [!NOTE]
-<span style="color: #00ff00 ; font-size: x-large ;align : center " > This text will be green</span>
+> <span style="color: #00ff00 ; font-size: x-large ;align : center " > This text will be green</span>
+
+## $\textcolor{yellow}{More\ Details\ }$
+
 1 byte = 8 bits
 
 2^7 (128) + 2^6 (64) + 2^5 (32) + 2^4 (16) + 2^3 (8) + 2^2 (4) + 2^1 (2) + 2^0 (1) = 255
