@@ -64,8 +64,8 @@ Size of structure: 8 bytes
 
 so the maximom number value that can be fit into the 1 byte is 255
 
-> 0 - 127 = positive numbers
-> 128 - 255 = negative numbers
+    0 - 127 = positive numbers
+    128 - 255 = negative numbers
 
 - char c = 127; (positive value)
 
