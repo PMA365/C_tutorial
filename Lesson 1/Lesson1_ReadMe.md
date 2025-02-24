@@ -18,25 +18,29 @@
 
 #### Floating point types :
 
-float f; // 4 bytes
-double d; // 8 bytes
-long double ld; // 10 bytes or 16 bytes
+| Type        | Size                 |
+| ----------- | -------------------- |
+| float       | 4 bytes              |
+| double      | 8 bytes              |
+| long double | 10 bytes or 16 bytes |
 
 #### Pointer types :
 
-int\* p; // 4 bytes or 8 bytes
+| Type  | Size               |
+| ----- | ------------------ |
+| int\* | 4 bytes or 8 bytes |
 
 #### Array types :
 
-int arr[10]; // 40 bytes (10 x 4 bytes)
+| Type        | Size                    |
+| ----------- | ----------------------- |
+| int arr[10] | 40 bytes (10 x 4 bytes) |
 
 #### Structure types :
 
-struct {
-int a; // 4 bytes
-char b; // 1 byte
-short c; // 2 bytes
-}myStruct; // 7 bytes (4 + 1 + 2)
+| Type            | Size                |
+| --------------- | ------------------- |
+| struct MyStruct | 7 bytes (4 + 1 + 2) |
 
 > Output:
 > Size of char: 1 bytes
