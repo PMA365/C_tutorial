@@ -58,7 +58,11 @@ Size of structure: 8 bytes
 
 ---
 
-![](https://img.shields.io/badge/More_Datail-8A2BE2)
+[![](https://img.shields.io/badge/More_Datail-8A2BE2)]
+
+![](https://img.shields.io/badge/More%20Details?style=flat&logoColor=violet&logoSize=30px)
+
+![](https://img.shields.io/badge/More%20Details?style=flat&logoSize=10px-8A2BE2)
 
 ## $\textcolor{yellow}{More\ Details\ }$
 
