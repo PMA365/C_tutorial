@@ -58,16 +58,8 @@ Size of structure: 8 bytes
 
 ---
 
-![Static Badge](https://img.shields.io/badge/More_Datail-8A2BE2)
-
-![Static Badge](https://img.shields.io/badge/More%20Details?style=flat&logoColor=violet)
-
-![Static Badge](https://img.shields.io/badge/More_Detailsstyle=flat&logoColor=violet&logoSize=30px)
-<span style="text-align: center">
-
-## $\textcolor{yellow}{More\ Details\ }$
-
-</span>
+<h3 align= "center">$\textcolor{yellow}{More\ Details\ }$
+</h3>
 
 1 byte = 8 bits
 
