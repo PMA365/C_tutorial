@@ -28,7 +28,7 @@
 
 Vs code
 
-<div>
+<div style="display: inline-block;">
   <div style="display: inline-block; margin-right: 25px;">
     <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
     <img
