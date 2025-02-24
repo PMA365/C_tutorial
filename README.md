@@ -50,5 +50,6 @@ Vs code
     <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank" rel="noreferrer" style="margin-right: 40px">
     <img class="image-display" alt="C/C++" src="https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.24.1/1739493821277/Microsoft.VisualStudio.Services.Icons.Default" width="40"
     height="40">
+    </a>
   </div>
 </div>
