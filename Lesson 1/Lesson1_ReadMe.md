@@ -58,13 +58,16 @@ Size of structure: 8 bytes
 
 ---
 
-[![](https://img.shields.io/badge/More_Datail-8A2BE2)]
+![Static Badge](https://img.shields.io/badge/More_Datail-8A2BE2)
 
-![](https://img.shields.io/badge/More%20Details?style=flat&logoColor=violet&logoSize=30px)
+![Static Badge](https://img.shields.io/badge/More%20Details?style=flat&logoColor=violet)
 
-![](https://img.shields.io/badge/More%20Details?style=flat&logoSize=10px-8A2BE2)
+![Static Badge](https://img.shields.io/badge/More_Detailsstyle=flat&logoColor=violet&logoSize=30px)
+<span style="text-align: center">
 
 ## $\textcolor{yellow}{More\ Details\ }$
+
+</span>
 
 1 byte = 8 bits
 
