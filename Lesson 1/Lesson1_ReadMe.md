@@ -26,9 +26,9 @@
 
 #### Pointer types :
 
-| Type  | Size               |
-| ----- | ------------------ |
-| int\* | 4 bytes or 8 bytes |
+| Type  | Size                                                          |
+| ----- | ------------------------------------------------------------- |
+| int\* | 4 bytes(32-bit systems) <br> or <br> 8 bytes( 64-bit systems) |
 
 #### Array types :
 
