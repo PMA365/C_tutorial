@@ -3,6 +3,10 @@
 int main() {
     // Integer types
     char c;         // 1 byte
+    unsigned char maximomValue = 257;
+    printf("%u\n", maximomValue);
+    unsigned short maximomValue2 = 65536; 
+    printf("%u\n", maximomValue2);
     short s;        // 2 bytes
     int i;          // 4 bytes
     long l;         // 4 bytes or 8 bytes
