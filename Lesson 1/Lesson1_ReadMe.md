@@ -44,14 +44,14 @@
 
 #### Output:
 
-> Size of char: 1 bytes
-> Size of short: 2 bytes
-> Size of int: 4 bytes
-> Size of long: 4 bytes
-> Size of long long: 8 bytes
-> Size of float: 4 bytes
-> Size of double: 8 bytes
-> Size of long double: 16 bytes
-> Size of pointer: 8 bytes
-> Size of array: 40 bytes
-> Size of structure: 8 bytes
+Size of char: 1 bytes
+Size of short: 2 bytes
+Size of int: 4 bytes
+Size of long: 4 bytes
+Size of long long: 8 bytes
+Size of float: 4 bytes
+Size of double: 8 bytes
+Size of long double: 16 bytes
+Size of pointer: 8 bytes
+Size of array: 40 bytes
+Size of structure: 8 bytes
