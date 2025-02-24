@@ -42,7 +42,8 @@
 | --------------- | ------------------- |
 | struct MyStruct | 7 bytes (4 + 1 + 2) |
 
-> Output:
+#### Output:
+
 > Size of char: 1 bytes
 > Size of short: 2 bytes
 > Size of int: 4 bytes
