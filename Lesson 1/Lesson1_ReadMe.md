@@ -8,7 +8,13 @@
 
 #### Integer types :
 
-| Type | Size | | --- | --- | | char | 1 byte | | short | 2 bytes | | int | 4 bytes | | long | 4 bytes or 8 bytes | | long long | 8 bytes |
+| Type      | Size               |
+| --------- | ------------------ |
+| char      | 1 byte             |
+| short     | 2 bytes            |
+| int       | 4 bytes            |
+| long      | 4 bytes or 8 bytes |
+| long long | 8 bytes            |
 
 #### Floating point types :
 
