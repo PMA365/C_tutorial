@@ -58,8 +58,8 @@ Size of structure: 8 bytes
 
 ---
 
-<h2 align= "center">$\textcolor{yellow}{More\ Details\ }$
-</h2>
+<h1 align= "center">$\textcolor{yellow}{More\ Details\ }$
+</h1>
 
 1 byte = 8 bits
 
