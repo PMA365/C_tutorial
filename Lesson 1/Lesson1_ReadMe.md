@@ -8,11 +8,7 @@
 
 #### Integer types :
 
-char c; // 1 byte
-short s; // 2 bytes
-int i; // 4 bytes
-long l; // 4 bytes or 8 bytes
-long long ll; // 8 bytes
+| Type | Size | | --- | --- | | char | 1 byte | | short | 2 bytes | | int | 4 bytes | | long | 4 bytes or 8 bytes | | long long | 8 bytes |
 
 #### Floating point types :
 
