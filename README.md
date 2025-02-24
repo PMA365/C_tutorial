@@ -28,7 +28,7 @@
 
 Vs code
 
-<div style="display: flex; gap: 40px;">
+<div style="display: flex; flex-direction: row; gap: 40px;">
   <div>
     <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
     <img
