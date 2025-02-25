@@ -83,8 +83,6 @@ so the maximom number value that can be fit into the 1 byte is 255
 
 And the Minimom Negative Number is -128
 
-### In summery :
-
 char c maximomValue = 127
 and minimomValue = -128
 | Type | Minimum Value | Maximum Value |
@@ -121,7 +119,7 @@ Short maximom and minimom value
 
 ---
 
-for the int type
+### int type :
 
 - int: 4 bytes (32 bits)
 - Maximum value: 2^31 - 1 = 2147483647
@@ -135,11 +133,17 @@ for the int type
 
 ---
 
+### float type :
+
 - float: 4 bytes (32 bits)
 - Minimum value: approximately 1.175494351e-38
+- e-38 part means that the number should be multiplied by 10 to the power of -38.
+- 0.00000000000000000000000000000000000001175494351 = 1.175494351e-38
 - Maximum value: approximately 3.402823466e+38
+- so float type can store larger numbers than the int type. albeit with some loss of precision due to the binary representation
+- 🔖 Keep in mind that the float type is not suitable for storing large integers, as it will lose precision and may not be able to represent the exact value. For large integers, you may want to use a larger integer type, such as long long or a library that supports arbitrary-precision arithmetic.
 
-# Understand the IEEE 754 floating-point representation
+##### Understand the IEEE 754 floating-point representation :
 
 In the IEEE 754 floating-point representation, a 32-bit float is divided into 3 parts:
 
@@ -154,10 +158,6 @@ In the IEEE 754 floating-point representation, a 32-bit float is divided into 3 
 | Type  | Minimum Value                 | Maximum Value                 |
 | ----- | ----------------------------- | ----------------------------- |
 | float | approximately 1.175494351e-38 | approximately 3.402823466e+38 |
-
-Note that the minimum and maximu
-
-# IEEE 754 Floating-Point Standard
 
 The IEEE 754 standard is a widely used standard for floating-point arithmetic in computing. It defines how floating-point numbers are represented, stored, and manipulated in binary form.
 
@@ -198,7 +198,7 @@ The IEEE 754 standard is a widely used standard for floating-point arithmetic in
 - **Bias**: 127 for single precision.
 - The actual exponent is calculated as:  
   \[
-  \text{Exponent} = \text{Exponent Field (binary)} - \text{Bias}
+  \text{Exponent} = \text{Exponent Field (binary)} + \text{Bias}
   \]
 
 ### **3. Mantissa**:
@@ -306,6 +306,11 @@ For the example `-13.625`:
 
 ```
 
+### two images for more details also:
+
+<img align="left" src="./img/p1.jpg" style="max-width: 200px; height: auto;">
+<img align="top" src="./img/p2.jpg" style="max-width: 200px; height: auto;">
+
 ---
 
 ## **Summary**
@@ -315,7 +320,8 @@ For the example `-13.625`:
 - Single precision (32-bit) and double precision (64-bit) are the most common formats.
 - Special cases like zero, infinity, and NaN are also defined.
 
----
+Watch this well detailed youtube video if you need it :
+[for more datails](https://youtu.be/aKp4nrhnTJg?si=XBbnzjm27ja3K80T)
 
 | Type             | Minimum Value                 | Maximum Value                 |
 | ---------------- | ----------------------------- | ----------------------------- |
