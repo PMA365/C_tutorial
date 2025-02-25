@@ -157,6 +157,164 @@ In the IEEE 754 floating-point representation, a 32-bit float is divided into 3 
 
 Note that the minimum and maximu
 
+# IEEE 754 Floating-Point Standard
+
+The IEEE 754 standard is a widely used standard for floating-point arithmetic in computing. It defines how floating-point numbers are represented, stored, and manipulated in binary form.
+
+---
+
+## **Key Concepts of IEEE 754**
+
+1. **Floating-Point Representation**:
+
+   - Floating-point numbers are represented in three parts:
+     - **Sign bit**: Determines whether the number is positive or negative.
+     - **Exponent**: Represents the power of 2 to which the number is raised.
+     - **Mantissa (Significand)**: Represents the fractional part of the number.
+
+2. **Formats**:
+   - IEEE 754 defines several formats, but the most common are:
+     - **Single Precision (32-bit)**: Used in most applications.
+     - **Double Precision (64-bit)**: Used for higher precision.
+
+---
+
+## **IEEE 754 Single Precision (32-bit) Format**
+
+| **Component** | **Sign Bit** | **Exponent (8 bits)** | **Mantissa (23 bits)** |
+| ------------- | ------------ | --------------------- | ---------------------- |
+| **Size**      | 1 bit        | 8 bits                | 23 bits                |
+
+- **Total Bits**: 1 (sign) + 8 (exponent) + 23 (mantissa) = 32 bits.
+
+### **1. Sign Bit**:
+
+- **0**: Positive number.
+- **1**: Negative number.
+
+### **2. Exponent**:
+
+- The exponent is stored in **biased form** to handle both positive and negative exponents.
+- **Bias**: 127 for single precision.
+- The actual exponent is calculated as:  
+  \[
+  \text{Exponent} = \text{Exponent Field (binary)} - \text{Bias}
+  \]
+
+### **3. Mantissa**:
+
+- The mantissa represents the fractional part of the number.
+- It is normalized to have a leading 1 (implicit), so only the fractional part is stored.
+
+---
+
+## **IEEE 754 Double Precision (64-bit) Format**
+
+| **Component** | **Sign Bit** | **Exponent (11 bits)** | **Mantissa (52 bits)** |
+| ------------- | ------------ | ---------------------- | ---------------------- |
+| **Size**      | 1 bit        | 11 bits                | 52 bits                |
+
+- **Total Bits**: 1 (sign) + 11 (exponent) + 52 (mantissa) = 64 bits.
+- **Bias**: 1023 for double precision.
+
+---
+
+## **Example: Single Precision Representation**
+
+Let’s represent the decimal number `-13.625` in IEEE 754 single precision format.
+
+### **Step 1: Convert to Binary**
+
+- **Integer part (13)**:
+  \[
+  13\_{10} = 1101_2
+  \]
+- **Fractional part (0.625)**:
+  \[
+  0.625\_{10} = 0.101_2
+  \]
+- **Combined**:
+  \[
+  13.625\_{10} = 1101.101_2
+  \]
+
+### **Step 2: Normalize**
+
+- Move the binary point to the left until there is only one non-zero digit to the left:
+  \[
+  1101.101_2 = 1.101101_2 \times 2^3
+  \]
+- **Exponent**: 3 (since the binary point was moved 3 places to the left).
+
+### **Step 3: Encode the Sign, Exponent, and Mantissa**
+
+- **Sign bit**: `1` (negative number).
+- **Exponent**: Add bias (127) to the exponent:
+  \[
+  3 + 127 = 130\_{10} = 10000010_2
+  \]
+- **Mantissa**: Drop the leading 1 and store the fractional part:
+  \[
+  1.101101_2 \rightarrow 10110100000000000000000_2
+  \]
+
+### **Step 4: Combine**
+
+- **Final Representation**:
+  \[
+  1\ \ 10000010\ \ 10110100000000000000000
+  \]
+  (Sign | Exponent | Mantissa)
+
+---
+
+## **Special Cases in IEEE 754**
+
+1. **Zero**:
+
+   - Sign bit: 0 or 1.
+   - Exponent: All zeros.
+   - Mantissa: All zeros.
+
+2. **Infinity**:
+
+   - Sign bit: 0 or 1.
+   - Exponent: All ones.
+   - Mantissa: All zeros.
+
+3. **NaN (Not a Number)**:
+   - Exponent: All ones.
+   - Mantissa: Non-zero.
+
+---
+
+## **Visualization of IEEE 754 Single Precision**
+
+Imagine a 32-bit binary number divided into three parts:
+
+```
+
+| S | Exponent (8 bits) | Mantissa (23 bits) |
+
+```
+
+For the example `-13.625`:
+
+```
+
+| 1 | 10000010 | 10110100000000000000000 |
+
+```
+
+---
+
+## **Summary**
+
+- IEEE 754 is the standard for floating-point representation in computers.
+- It uses a sign bit, biased exponent, and normalized mantissa.
+- Single precision (32-bit) and double precision (64-bit) are the most common formats.
+- Special cases like zero, infinity, and NaN are also defined.
+
 ---
 
 | Type             | Minimum Value                 | Maximum Value                 |
