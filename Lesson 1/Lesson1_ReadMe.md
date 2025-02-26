@@ -467,4 +467,4 @@ C Language Types Summary
 | long double | Long double-precision floating-point number | 10 bytes | 16 bytes | 3.362103143112093506e-4932 | 1.189731495357231765e+4932 |
 | pointer | Memory address | 4 bytes | 8 bytes | N/A | N/A |
 
-I hope this summary table is helpful! <3
+I hope this summary table is helpful! ❤️
