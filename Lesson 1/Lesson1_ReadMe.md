@@ -26,9 +26,19 @@
 
 #### Pointer types :
 
-| Type  | Size                                                          |
-| ----- | ------------------------------------------------------------- |
-| int\* | 4 bytes(32-bit systems) <br> or <br> 8 bytes( 64-bit systems) |
+| Type    | Size                                                          |
+| ------- | ------------------------------------------------------------- |
+| pointer | 4 bytes(32-bit systems) <br> or <br> 8 bytes( 64-bit systems) |
+
+| Pointer Type | Size (32-bit) | Size (64-bit) |
+| ------------ | ------------- | ------------- |
+| char \*      | 4 bytes       | 8 bytes       |
+| short \*     | 4 bytes       | 8 bytes       |
+| int \*       | 4 bytes       | 8 bytes       |
+| long \*      | 4 bytes       | 8 bytes       |
+| float \*     | 4 bytes       | 8 bytes       |
+| double \*    | 4 bytes       | 8 bytes       |
+| void \*      | 4 bytes       | 8 bytes       |
 
 #### Array types :
 
@@ -327,7 +337,7 @@ Here's an explanation of Pointers, Array types, and Structure types in C, along 
 
 # **Pointers**
 
-A pointer is a variable that stores the memory address of another variable.
+A pointer is a variable that stores the **memory address** of another variable.
 
 ### Pointer Declaration
 
@@ -357,11 +367,11 @@ int main() {
 }
 ```
 
-##### 🔖so by default the ptr stores the address of var
+##### 🔖 so by default the ptr stores the address of var
 
 # **Array Types**
 
-An array is a collection of elements of the same data type stored in contiguous memory locations.
+An array is a collection of elements of the same data type stored in contiguous memory locations(a block of memory where each element is stored one after the other, without any gaps or holes in between).
 
 ### Array Declaration
 
@@ -430,16 +440,31 @@ int main() {
 }
 ```
 
-Let me know if you'd like me to add anything else!
+---
+
+Memory Layout Summary
+| Concept | Memory Layout |
+| --- | --- |
+| Array | Contiguous memory locations |
+| Structure | Contiguous memory locations |
+| Pointer | Stores memory address of another variable |
 
 ---
 
-| Type             | Minimum Value                 | Maximum Value                 |
-| ---------------- | ----------------------------- | ----------------------------- |
-| char (signed)    | -128                          | 127                           |
-| char (unsigned)  | 0                             | 255                           |
-| short (signed)   | -32768                        | 32767                         |
-| short (unsigned) | 0                             | 65535                         |
-| int (signed)     | -2147483648                   | 2147483647                    |
-| int (unsigned)   | 0                             | 4294967295                    |
-| float            | approximately 1.175494351e-38 | approximately 3.402823466e+38 |
+C Language Types Summary
+| Type | Description | Size (32-bit) | Size (64-bit) | Min Value | Max Value |
+| --- | --- | --- | --- | --- | --- |
+| char | Character | 1 byte | 1 byte | -128 | 127 |
+| unsigned char | Unsigned character | 1 byte | 1 byte | 0 | 255 |
+| short | Short integer | 2 bytes | 2 bytes | -32,768 | 32,767 |
+| unsigned short | Unsigned short integer | 2 bytes | 2 bytes | 0 | 65,535 |
+| int | Integer | 4 bytes | 4 bytes | -2,147,483,648 | 2,147,483,647 |
+| unsigned int | Unsigned integer | 4 bytes | 4 bytes | 0 | 4,294,967,295 |
+| long | Long integer | 4 bytes | 8 bytes | -2,147,483,648 | 2,147,483,647 |
+| unsigned long | Unsigned long integer | 4 bytes | 8 bytes | 0 | 4,294,967,295 |
+| float | Floating-point number | 4 bytes | 4 bytes | 1.175494e-38 | 3.402823e+38 |
+| double | Double-precision floating-point number | 8 bytes | 8 bytes | 2.225073858507201e-308 | 1.797693134862315e+308 |
+| long double | Long double-precision floating-point number | 10 bytes | 16 bytes | 3.362103143112093506e-4932 | 1.189731495357231765e+4932 |
+| pointer | Memory address | 4 bytes | 8 bytes | N/A | N/A |
+
+I hope this summary table is helpful! <3
