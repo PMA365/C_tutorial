@@ -308,8 +308,8 @@ For the example `-13.625`:
 
 ### two images for more details also:
 
-<img align="left" src="./img/p1.jpg" width="100" height="200">
-<img align="left" src="./img/p2.jpg" width="100" height="200">
+<img align="left" src="./img/p1.jpg" width="300" height="400">
+<img align="top" src="./img/p2.jpg" width="300" height="400">
 
 ---
 
