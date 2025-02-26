@@ -3,9 +3,9 @@
 int main() {
     // Integer types
     char c;         // 1 byte
-    unsigned char maximomValue = 257;
+    unsigned char maximomValue = 255;
     printf("%u\n", maximomValue);
-    unsigned short maximomValue2 = 65536; 
+    unsigned short maximomValue2 = 65535; 
     printf("%u\n", maximomValue2);
     short s;        // 2 bytes
     int i;          // 4 bytes
@@ -41,6 +41,20 @@ int main() {
     printf("Size of pointer: %zu bytes\n", sizeof(int*));
     printf("Size of array: %zu bytes\n", sizeof(arr));
     printf("Size of structure: %zu bytes\n", sizeof(myStruct));
+
+
+    // pointers example
+    printf("pointers example :");
+    int var = 10;
+    int *ptr = &var;  // declare and initialize a pointer
+
+    printf("Value of var: %d\n", var);
+    printf("Address of var: %p\n", (void *)&var);
+    printf("Value of ptr: %p\n", (void *)ptr);
+    printf("so by default the ptr stores the address of var %d\n");
+    printf("Value at address ptr: %d\n", *ptr);
+
+    
 
     return 0;
 }

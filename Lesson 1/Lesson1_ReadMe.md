@@ -323,6 +323,117 @@ For the example `-13.625`:
 Watch this well detailed youtube video if you need it :
 [for more datails](https://youtu.be/aKp4nrhnTJg?si=XBbnzjm27ja3K80T)
 
+Here's an explanation of Pointers, Array types, and Structure types in C, along with tables in Markdown format:
+
+# **Pointers**
+
+A pointer is a variable that stores the memory address of another variable.
+
+### Pointer Declaration
+
+- `int *ptr;` declares a pointer to an integer.
+- `char *ptr;` declares a pointer to a character.
+
+### Pointer Operations
+
+| Operation | Description                                                         |
+| --------- | ------------------------------------------------------------------- |
+| `&`       | Address-of operator. Returns the memory address of a variable.      |
+| `*`       | Dereference operator. Returns the value stored at a memory address. |
+
+### Pointer Example
+
+```c
+int main() {
+    int var = 10;
+    int *ptr = &var;  // declare and initialize a pointer
+
+    printf("Value of var: %d\n", var);
+    printf("Address of var: %p\n", (void *)&var);
+    printf("Value of ptr: %p\n", (void *)ptr);
+    printf("Value at address ptr: %d\n", *ptr);
+
+    return 0;
+}
+```
+
+##### 🔖so by default the ptr stores the address of var
+
+# **Array Types**
+
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+
+### Array Declaration
+
+- `int arr[5];` declares an array of 5 integers.
+- `char arr[10];` declares an array of 10 characters.
+
+### Array Operations
+
+| Operation | Description                                           |
+| --------- | ----------------------------------------------------- |
+| `arr[0]`  | Access the first element of the array.                |
+| `arr[4]`  | Access the fifth element of the array (last element). |
+
+### Array Example
+
+```c
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};  // declare and initialize an array
+
+    printf("First element: %d\n", arr[0]);
+    printf("Last element: %d\n", arr[4]);
+
+    return 0;
+}
+```
+
+# **Structure Types**
+
+A structure is a collection of elements of different data types stored in contiguous memory locations.
+
+### Structure Declaration
+
+```c
+struct Person {
+    int age;
+    char name[20];
+};
+```
+
+### Structure Operations
+
+| Operation          | Description                                |
+| ------------------ | ------------------------------------------ |
+| `struct Person p;` | Declare a structure variable.              |
+| `p.age`            | Access the `age` member of the structure.  |
+| `p.name`           | Access the `name` member of the structure. |
+
+### Structure Example
+
+```c
+struct Person {
+    int age;
+    char name[20];
+};
+
+int main() {
+    struct Person p;  // declare a structure variable
+
+    p.age = 25;
+    strcpy(p.name, "John");
+
+    printf("Age: %d\n", p.age);
+    printf("Name: %s\n", p.name);
+
+    return 0;
+}
+```
+
+Let me know if you'd like me to add anything else!
+
+---
+
 | Type             | Minimum Value                 | Maximum Value                 |
 | ---------------- | ----------------------------- | ----------------------------- |
 | char (signed)    | -128                          | 127                           |
