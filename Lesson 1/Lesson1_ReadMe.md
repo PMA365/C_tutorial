@@ -522,81 +522,61 @@ Memory Layout Summary
 I hope this summary table is helpful! ❤️
 
 ```bash
-C Language Types
-├── Basic Types
-│ ├── char
-│ ├── int
-│ │ ├── short int
-│ │ ├── long int
-│ │ └── long long int
-│ ├── float
-│ ├── double
-│ └── void
-├── Derived Types
-│ ├── Arrays
-│ ├── Pointers
-│ ├── Functions
-│ └── Structures
-│ └── Unions
-└── User-Defined Types
-├── typedef
-└── enum
+Types
+|-- Primitive Types
+|   |-- Integer Types
+|   |   |-- int (4 bytes, -2147483648 to 2147483647)
+|   |   |-- short (2 bytes, -32768 to 32767)
+|   |   |-- long (4 bytes, -2147483648 to 2147483647)
+|   |   |-- long long (8 bytes, -9223372036854775808 to 9223372036854775807)
+|   |   |-- char (1 byte, -128 to 127)
+|   |   |-- unsigned int (4 bytes, 0 to 4294967295)
+|   |   |-- unsigned short (2 bytes, 0 to 65535)
+|   |   |-- unsigned long (4 bytes, 0 to 4294967295)
+|   |   |-- unsigned long long (8 bytes, 0 to 18446744073709551615)
+|   |   |-- unsigned char (1 byte, 0 to 255)
+|   |-- Floating-Point Types
+|   |   |-- float (4 bytes, 1.175494351e-38 to 3.402823466e+38)
+|   |   |-- double (8 bytes, 2.2250738585072014e-308 to 1.7976931348623157e+308)
+|   |   |-- long double (10 bytes, 3.36210314311209350626e-4932 to 1.18973149535723176502e+4932)
+|   |-- Void Type
+|   |   |-- void (no bytes)
+|   |-- Boolean Type
+|   |   |-- _Bool (1 byte, 0 to 1)
+|-- Derived Types
+|   |-- Array Types
+|   |   |-- int[] (4 bytes per element)
+|   |   |-- char[] (1 byte per element)
+|   |   |-- ...
+|   |-- Pointer Types
+|   |   |-- int* (4 bytes on 32-bit systems, 8 bytes on 64-bit systems)
+|   |   |-- char* (4 bytes on 32-bit systems, 8 bytes on 64-bit systems)
+|   |   |-- ...
+|   |-- Structure Types
+|   |   |-- struct (variable size, depends on members)
+|   |   |-- ...
+|   |-- Union Types
+|   |   |-- union (variable size, depends on members)
+|   |   |-- ...
+|   |-- Function Types
+|   |   |-- int() (no bytes, just a function signature)
+|   |   |-- void() (no bytes, just a function signature)
+|   |-- Abstract Data Types (ADTs)
+|   |   |-- Function Pointers
+|   |   |   |-- int (*)(int, int)
+|   |   |   |-- void (*)(void)
+|   |   |   |-- ...
+|-- User-Defined Types
+|   |-- Enumeration Types
+|   |   |-- enum (4 bytes on 32-bit systems, 8 bytes on 64-bit systems)
+|   |   |-- ...
+|   |-- Typedef Types
+|   |   |-- typedef (no bytes, just an alias)
+|   |-- Interface-like Types
+|   |   |-- Function Pointer Types
+|   |   |   |-- int (*)(int, int)
+|   |   |   |-- void (*)(void)
+|   |   |   |-- ...
 ```
 
-```bash
-Data Types
-├── Primitive
-│ ├── Integer
-│ │ ├── byte
-│ │ │ ├── Size: 1 byte (8 bits)
-│ │ │ ├── Min: -128
-│ │ │ └── Max: 127
-│ │ ├── short
-│ │ │ ├── Size: 2 bytes (16 bits)
-│ │ │ ├── Min: -32,768
-│ │ │ └── Max: 32,767
-│ │ ├── int
-│ │ │ ├── Size: 4 bytes (32 bits)
-│ │ │ ├── Min: -2,147,483,648
-│ │ │ └── Max: 2,147,483,647
-│ │ └── long
-│ │ ├── Size: 8 bytes (64 bits)
-│ │ ├── Min: -9,223,372,036,854,775,808
-│ │ └── Max: 9,223,372,036,854,775,807
-│ ├── Floating-Point
-│ │ ├── float
-│ │ │ ├── Size: 4 bytes (32 bits)
-│ │ │ ├── Min: ~1.4E-45
-│ │ │ └── Max: ~3.4E+38
-│ │ └── double
-│ │ ├── Size: 8 bytes (64 bits)
-│ │ ├── Min: ~4.9E-324
-│ │ └── Max: ~1.8E+308
-│ ├── Character
-│ │ └── char
-│ │ ├── Size: 2 bytes (16 bits)
-│ │ ├── Min: '\u0000' (0)
-│ │ └── Max: '\uffff' (65,535)
-│ └── Boolean
-│ └── bool
-│ ├── Size: 1 bit (typically stored as 1 byte for efficiency)
-│ ├── Min: false
-│ └── Max: true
-└── Non-Primitive
-├── String
-│ ├── Size: Variable (depends on the number of characters)
-│ ├── Min: "" (empty string)
-│ └── Max: 2^31 - 1 characters (theoretical limit)
-├── Array
-│ ├── Size: Variable (depends on the number of elements and their type)
-│ ├── Min: [] (empty array)
-│ └── Max: 2^31 - 1 elements (theoretical limit)
-├── Class
-│ ├── Size: Variable (depends on the fields and methods)
-│ ├── Min: N/A (depends on the class definition)
-│ └── Max: N/A (depends on the class definition)
-└── Interface
-├── Size: N/A (no memory allocation for interfaces themselves)
-├── Min: N/A
-└── Max: N/A
-```
+I hope this summary tree is also helpful! ❤️
