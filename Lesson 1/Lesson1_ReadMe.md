@@ -520,3 +520,79 @@ Memory Layout Summary
 | pointer            | Memory address | 4 bytes                              | 8 bytes                              |
 
 I hope this summary table is helpful! ❤️
+
+C Language Types
+├── Basic Types
+│ ├── char
+│ ├── int
+│ │ ├── short int
+│ │ ├── long int
+│ │ └── long long int
+│ ├── float
+│ ├── double
+│ └── void
+├── Derived Types
+│ ├── Arrays
+│ ├── Pointers
+│ ├── Functions
+│ └── Structures
+│ └── Unions
+└── User-Defined Types
+├── typedef
+└── enum
+
+Data Types
+├── Primitive
+│ ├── Integer
+│ │ ├── byte
+│ │ │ ├── Size: 1 byte (8 bits)
+│ │ │ ├── Min: -128
+│ │ │ └── Max: 127
+│ │ ├── short
+│ │ │ ├── Size: 2 bytes (16 bits)
+│ │ │ ├── Min: -32,768
+│ │ │ └── Max: 32,767
+│ │ ├── int
+│ │ │ ├── Size: 4 bytes (32 bits)
+│ │ │ ├── Min: -2,147,483,648
+│ │ │ └── Max: 2,147,483,647
+│ │ └── long
+│ │ ├── Size: 8 bytes (64 bits)
+│ │ ├── Min: -9,223,372,036,854,775,808
+│ │ └── Max: 9,223,372,036,854,775,807
+│ ├── Floating-Point
+│ │ ├── float
+│ │ │ ├── Size: 4 bytes (32 bits)
+│ │ │ ├── Min: ~1.4E-45
+│ │ │ └── Max: ~3.4E+38
+│ │ └── double
+│ │ ├── Size: 8 bytes (64 bits)
+│ │ ├── Min: ~4.9E-324
+│ │ └── Max: ~1.8E+308
+│ ├── Character
+│ │ └── char
+│ │ ├── Size: 2 bytes (16 bits)
+│ │ ├── Min: '\u0000' (0)
+│ │ └── Max: '\uffff' (65,535)
+│ └── Boolean
+│ └── bool
+│ ├── Size: 1 bit (typically stored as 1 byte for efficiency)
+│ ├── Min: false
+│ └── Max: true
+└── Non-Primitive
+├── String
+│ ├── Size: Variable (depends on the number of characters)
+│ ├── Min: "" (empty string)
+│ └── Max: 2^31 - 1 characters (theoretical limit)
+├── Array
+│ ├── Size: Variable (depends on the number of elements and their type)
+│ ├── Min: [] (empty array)
+│ └── Max: 2^31 - 1 elements (theoretical limit)
+├── Class
+│ ├── Size: Variable (depends on the fields and methods)
+│ ├── Min: N/A (depends on the class definition)
+│ └── Max: N/A (depends on the class definition)
+└── Interface
+├── Size: N/A (no memory allocation for interfaces themselves)
+├── Min: N/A
+└── Max: N/A
