@@ -49,7 +49,7 @@ Note that the byte order is dependent on the system architecture, and some syste
 
 ## <h1 align="center"> Octal and HexaDecimal </h1>
 
-#### convert the decimal number
+### Convert the Decimal to Octal
 
 To convert the decimal number 83 to its octal (base-8) equivalent, follow these steps:
 
