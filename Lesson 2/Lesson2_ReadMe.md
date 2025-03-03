@@ -338,3 +338,44 @@ Types
 |   |   |   |-- void (*)(void)
 |   |   |   |-- ...
 ```
+
+---
+
+ <h2 align="center"> How Negative numbers stored in the Memory In C language </h1>
+
+What is Two's Complement?
+Two's Complement is a method of representing signed integers in binary. It works by inverting the bits of the absolute value of the number and then adding 1.
+
+Example: Storing -5 in Memory
+Let's take the example of storing the decimal number -5 in memory.
+
+Step 1: Convert 5 to Binary
+
+5 in binary: 00000101
+
+Step 2: Invert the Bits
+
+Inverted bits: 11111010
+
+Step 3: Add 1
+Add 1: 11111011
+
+The resulting binary number 11111011 is the Two's Complement representation of -5.
+
+##### Visualizing Negative Numbers in Memory:
+
+Here's a simple visualization of how negative numbers are stored in memory:
+
++---------------+
+| Memory Address |
++---------------+
+| 11111011 | // -5 in Two's Complement
++---------------+
+| 00000101 | // 5 in binary
++---------------+
+| 11111111 | // -1 in Two's Complement
++---------------+
+| 00000000 | // 0 in binary
++---------------+
+
+In this example, we can see that the negative numbers -5 and -1 are stored in memory using their Two's Complement representations.
