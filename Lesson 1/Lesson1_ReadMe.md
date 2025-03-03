@@ -521,6 +521,7 @@ Memory Layout Summary
 
 I hope this summary table is helpful! ❤️
 
+```bash
 C Language Types
 ├── Basic Types
 │ ├── char
@@ -540,7 +541,9 @@ C Language Types
 └── User-Defined Types
 ├── typedef
 └── enum
+```
 
+```bash
 Data Types
 ├── Primitive
 │ ├── Integer
@@ -596,3 +599,4 @@ Data Types
 ├── Size: N/A (no memory allocation for interfaces themselves)
 ├── Min: N/A
 └── Max: N/A
+```

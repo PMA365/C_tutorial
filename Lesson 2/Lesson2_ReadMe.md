@@ -291,6 +291,8 @@ The C only have 2 type of numeric data types :
 Integer[char,unsigned char,int,unsigned int,short,unsigned short,long,unsigned long,long long,unsigned long long] and Float[float,double,long double]:
 
 Review :
+
+```bash
 C Language Types
 ├── Basic Types
 │   ├── char
@@ -310,8 +312,9 @@ C Language Types
 └── User-Defined Types
     ├── typedef
     └── enum
+```
 
-
+```bash
 Data Types
 ├── Primitive
 │   ├── Integer
@@ -367,3 +370,4 @@ Data Types
         ├── Size: N/A (no memory allocation for interfaces themselves)
         ├── Min: N/A
         └── Max: N/A
+```
