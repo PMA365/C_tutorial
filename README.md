@@ -10,7 +10,7 @@
 #### To do :
 
 - [x] completing Lesson 1
-- [ ] completing Lesson 2
+- [x] completing Lesson 2
 - [ ] completing Lesson 3
 - [ ] completing Lesson 4
 - [ ] completing Lesson 5
