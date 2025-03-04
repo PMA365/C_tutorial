@@ -445,5 +445,22 @@ Note In digital electronics, there is no such thing as a "binary subtraction" ci
   +---------------+
   |  Result (A-B) |
   +---------------+
+  
+how negative numbers stored in memory in c program :
+for example : -5 in two's complement:
+00000101 Ones Complement =>
+11111010 +1
+=> 11111011 two's complement in 32 bit system processor all other empty spaces of memory
+will fill with -1 representing its negative number.
+  +-----------------------------------------------+
+  |  Address  |  Byte  |  Binary  |  Decimal  |
+  +-----------------------------------------------+
+  |  0x1000  |  0xFB  | 11111011 |  -5 (LSB) |
+  |  0x1001  |  0xFF  | 11111111 |  -1      |
+  |  0x1002  |  0xFF  | 11111111 |  -1      |
+  |  0x1003  |  0xFF  | 11111111 |  -1 (MSB) |
+  +-----------------------------------------------+
 
 
+0x1001, 0x1002, and 0x1003: The remaining bytes of the value
+which represents the value [-1] in two's complement notation.
