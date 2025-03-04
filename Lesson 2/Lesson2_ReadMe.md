@@ -1,4 +1,6 @@
 ## <h1 align="center"> Memory Assignment </h1>
+Assignment is about How the data will stored in memmory:
+Octal Hexadecimal Symbol and Binary 
 
 Here is an example of how little-endian and big-endian memory storage works in C, represented in a visual table using Markdown:
 
@@ -341,7 +343,7 @@ Types
 
 ---
 
- <h2 align="center"> How Negative numbers stored in the Memory In C language </h1>
+<h2 align="center"> How Negative numbers stored in the Memory In C language </h1>
 
 What is Two's Complement?
 Two's Complement is a method of representing signed integers in binary. It works by inverting the bits of the absolute value of the number and then adding 1.
@@ -379,3 +381,69 @@ Here's a simple visualization of how negative numbers are stored in memory:
 +---------------+
 
 In this example, we can see that the negative numbers -5 and -1 are stored in memory using their Two's Complement representations.
+
+<h2 align="center"> Why 2's Complement is Needed for Subtraction in Computers </h1>
+
+When you subtract one number from another, you need to borrow from the next higher bit, just like in decimal arithmetic. However, in binary arithmetic, there's no concept of "borrowing" from a higher bit. That's where 2's Complement comes in.
+
+Let's say we want to subtract 5 from 3. In decimal arithmetic, this would be:
+
+3 - 5 = -2
+
+In binary arithmetic, we can represent 3 and 5 as:
+
+3: 00000011
+5: 00000101
+If we try to subtract 5 from 3 using binary arithmetic, we get:
+3 + (-5) :
+00000011 + 10000101 = 10001000 (-8 in decimal)
+
+But this is not the correct result.
+
+sp we Convert the subtrahend (5) to its 2's Complement:
+
+1. first we make the 1's complement of the the smallet absolute number:
+   hers is 3:
+   00000011 (3) 11111100 (1's Complement)
+
+2. we add 1 to it :
+   11111100 + 1 (add 1)
+   -> 11111101 (2's Complement)
+
+now we add this to our 5:
+11111101 + 00000101 = 00000010
+
+- 11111011
+  = 11111100 ()
+
+// prettier-ignore
+Note In digital electronics, there is no such thing as a "binary subtraction" circuit. Instead, subtraction is performed using an adder circuit with a full inverter.
+
+  +---------------+     +------------------+     
+  |  Minuend (A)  |     |  Subtrahend (~B) |
+  +---------------+     +------------------+
+           |                     |
+           |                     |
+           |                     |
+           |                     |
+           v                     v
+                        +-------------------+
+                        |      NOT Gate     |
+                        |      (~B)         |
+                        +-------------------+    
+                                 |
+                                 |
+                                 v
+
+  +-------------------------------------+
+  |  Full Adder                         |
+  |  (A            +          ~B)        |
+  +--------------------------------------+
+           |
+           |
+           v
+  +---------------+
+  |  Result (A-B) |
+  +---------------+
+
+
