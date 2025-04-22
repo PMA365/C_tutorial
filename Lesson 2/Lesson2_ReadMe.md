@@ -1,29 +1,36 @@
 ## <h1 align="center"> Memory Assignment </h1>
+
 Assignment is about How the data will stored in memmory:
-Octal Hexadecimal Symbol and Binary 
+Octal Hexadecimal Symbol and Binary
 
 Here is an example of how little-endian and big-endian memory storage works in C, represented in a visual table using Markdown:
+
+```C
+short a;
+a = 25;
+// 0 0 0 0 0 0 0 0, 0 0 0 1 1 0 0 1
+
+```
+
+In Little Endian the most right part of binary stored in first room of memory
+then the others will be stored in the next rooms one by one
 
 ##### Little-Endian Memory Storage :
 
 | Memory Address | Byte Value |
 | -------------- | ---------- |
-| 0x1000         | 0x12       |
-| 0x1001         | 0x34       |
-| 0x1002         | 0x56       |
-| 0x1003         | 0x78       |
+| 0x1000         | 0x19       |
+| 0x1001         | 0x00       |
 
-In little-endian storage, the least significant byte (LSB) is stored at the lowest memory address.
-Intel cpu uses this method
+In Big Endian the most Left part of binary stored in first room of memory
+then the others will be stored in the next rooms one by one
 
 ##### Big-Endian Memory Storage :
 
 | Memory Address | Byte Value |
 | -------------- | ---------- |
-| 0x1000         | 0x78       |
-| 0x1001         | 0x56       |
-| 0x1002         | 0x34       |
-| 0x1003         | 0x12       |
+| 0x1000         | 0x00       |
+| 0x1001         | 0x19       |
 
 In big-endian storage, the most significant byte (MSB) is stored at the lowest memory address.
 
@@ -97,6 +104,40 @@ So, the octal representation of 83 is 123₈.
 
 Final Answer:
 [ 83_{10} = 123_{8} ]
+
+In C we show it :
+
+```C
+char a;
+
+a = 0123
+
+char b;
+
+b = 0377
+```
+
+We put a 0(zero) at start of the number to tell the compiler its Octal number.
+
+| Octal Number | Decimal Equivalent | Explanation                                                                                                                             |
+| ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 0377         | 255                | In octal, the highest digit is 7. The number 0377 represents the maximum value that can be stored in 3 octal digits (3 bits per digit). |
+
+In octal, each digit can have 8 values (0-7). The highest number that can be represented with 3 octal digits is 377, which is equivalent to 255 in decimal. This is because:
+
+Because the value for each bit has 8 difrent values:
+0 - 7 we call it Octal.
+
+```bash
+binary = 11 111 111
+octal  = 3   7   7
+3 × 8^2 = 192
+7 × 8^1 = 56
+7 × 8^0 = 7
+```
+
+Total: 192 + 56 + 7 = 255
+In many systems, including Unix file permissions, octal numbers are used to represent values that can be stored in 3 bits. The range of values is 000 to 377, with 377 being the maximum value.
 
 ## <h1 align="center"> HexaDecimal</h1>
 
@@ -419,48 +460,47 @@ now we add this to our 5:
 // prettier-ignore
 Note In digital electronics, there is no such thing as a "binary subtraction" circuit. Instead, subtraction is performed using an adder circuit with a full inverter.
 
-  +---------------+     +------------------+     
-  |  Minuend (A)  |     |  Subtrahend (~B) |
-  +---------------+     +------------------+
-           |                     |
-           |                     |
-           |                     |
-           |                     |
-           v                     v
-                        +-------------------+
-                        |      NOT Gate     |
-                        |      (~B)         |
-                        +-------------------+    
-                                 |
-                                 |
-                                 v
++---------------+ +------------------+  
+ | Minuend (A) | | Subtrahend (~B) |
++---------------+ +------------------+
+| |
+| |
+| |
+| |
+v v
++-------------------+
+| NOT Gate |
+| (~B) |
++-------------------+  
+ |
+|
+v
 
-  +-------------------------------------+
-  |  Full Adder                         |
-  |  (A            +          ~B)        |
-  +--------------------------------------+
-           |
-           |
-           v
-  +---------------+
-  |  Result (A-B) |
-  +---------------+
-  
++-------------------------------------+
+| Full Adder |
+| (A + ~B) |
++--------------------------------------+
+|
+|
+v
++---------------+
+| Result (A-B) |
++---------------+
+
 how negative numbers stored in memory in c program :
 for example : -5 in two's complement:
 00000101 Ones Complement =>
 11111010 +1
 => 11111011 two's complement in 32 bit system processor all other empty spaces of memory
 will fill with -1 representing its negative number.
-  +-----------------------------------------------+
-  |  Address  |  Byte  |  Binary  |  Decimal  |
-  +-----------------------------------------------+
-  |  0x1000  |  0xFB  | 11111011 |  -5 (LSB) |
-  |  0x1001  |  0xFF  | 11111111 |  -1      |
-  |  0x1002  |  0xFF  | 11111111 |  -1      |
-  |  0x1003  |  0xFF  | 11111111 |  -1 (MSB) |
-  +-----------------------------------------------+
-
++-----------------------------------------------+
+| Address | Byte | Binary | Decimal |
++-----------------------------------------------+
+| 0x1000 | 0xFB | 11111011 | -5 (LSB) |
+| 0x1001 | 0xFF | 11111111 | -1 |
+| 0x1002 | 0xFF | 11111111 | -1 |
+| 0x1003 | 0xFF | 11111111 | -1 (MSB) |
++-----------------------------------------------+
 
 0x1001, 0x1002, and 0x1003: The remaining bytes of the value
 which represents the value [-1] in two's complement notation.
