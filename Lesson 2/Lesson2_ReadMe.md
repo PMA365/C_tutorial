@@ -409,12 +409,12 @@ The resulting binary number 11111011 is the Two's Complement representation of -
 
 Here's a simple visualization of how negative numbers are stored in memory:
 
-| Memory Address   |                           |
-| ---------------- | ------------------------- |
-| 11111011         | // -5 in Two's Complement |
-| 00000101         | // 5 in binary            |
-| 11111111         | // -1 in Two's Complement |
-| 00000000         | // 0 in binary            |
+| Memory Address |                           |
+| -------------- | ------------------------- |
+| 11111011       | // -5 in Two's Complement |
+| 00000101       | // 5 in binary            |
+| 11111111       | // -1 in Two's Complement |
+| 00000000       | // 0 in binary            |
 
 In this example, we can see that the negative numbers -5 and -1 are stored in memory using their Two's Complement representations.
 
@@ -452,7 +452,6 @@ now we add this to our 5:
 - 11111011
   = 11111100 ()
 
-// prettier-ignore
 Note In digital electronics, there is no such thing as a "binary subtraction" circuit. Instead, subtraction is performed using an adder circuit with a full inverter.
 
 +---------------+ +------------------+  
@@ -467,7 +466,7 @@ v v
 | NOT Gate |
 | (~B) |
 +-------------------+  
- |
+|
 |
 v
 
@@ -488,14 +487,13 @@ for example : -5 in two's complement:
 11111010 +1
 => 11111011 two's complement in 32 bit system processor all other empty spaces of memory
 will fill with -1 representing its negative number.
-+-----------------------------------------------+
-| Address | Byte | Binary | Decimal |
-+-----------------------------------------------+
-| 0x1000 | 0xFB | 11111011 | -5 (LSB) |
-| 0x1001 | 0xFF | 11111111 | -1 |
-| 0x1002 | 0xFF | 11111111 | -1 |
-| 0x1003 | 0xFF | 11111111 | -1 (MSB) |
-+-----------------------------------------------+
+
+| Address | Byte | Binary   | Decimal  |
+| ------- | ---- | -------- | -------- |
+| 0x1000  | 0xFB | 11111011 | -5 (LSB) |
+| 0x1001  | 0xFF | 11111111 | -1       |
+| 0x1002  | 0xFF | 11111111 | -1       |
+| 0x1003  | 0xFF | 11111111 | -1 (MSB) |
 
 0x1001, 0x1002, and 0x1003: The remaining bytes of the value
 which represents the value [-1] in two's complement notation.
