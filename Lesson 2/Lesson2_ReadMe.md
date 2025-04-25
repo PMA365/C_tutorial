@@ -458,14 +458,14 @@ Note In digital electronics, there is no such thing as a "binary subtraction" ci
 +---------------+ +------------------+
 | Minuend (A)   | | Subtrahend (~B)  |
 +---------------+ +------------------+
-|                       |
-|                       |
-|                       |
-|                       |
-|                       v
+|                          |
+|                          |
+|                          |
+|                          |
+|                          v
 |                  +-------------------+
-|                  | NOT Gate |
-|                  | (~B) |
+|                  | NOT Gate          |
+|                  | (~B)              |
 |                  +-------------------+
 |                       |
 |                       |
@@ -479,7 +479,7 @@ v                       v
           |
           v
 +---------------+
-| Result (A-B) |
+| Result (A-B)  |
 +---------------+
 ```
 
