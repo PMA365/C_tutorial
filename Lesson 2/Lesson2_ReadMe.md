@@ -249,7 +249,7 @@ char c = 'a';
 
 Here, 'a' is a character constant that represents the character a.
 
-ou can put any single character between the single quotes, including:
+You can put any single character between the single quotes, including:
 
 - Letters (e.g., 'a', 'Z')
 - Digits (e.g., '0', '9')
@@ -409,17 +409,16 @@ The resulting binary number 11111011 is the Two's Complement representation of -
 
 Here's a simple visualization of how negative numbers are stored in memory:
 
-+---------------+
-| Memory Address |
-+---------------+
-| 11111011 | // -5 in Two's Complement
-+---------------+
-| 00000101 | // 5 in binary
-+---------------+
-| 11111111 | // -1 in Two's Complement
-+---------------+
-| 00000000 | // 0 in binary
-+---------------+
+| Memory Address   |                           |
+| ---------------- | ------------------------- |
+| 11111011         | // -5 in Two's Complement |
+| ---------------- | ------------------------- |
+| 00000101         | // 5 in binary            |
+| ---------------- | ------------------------- |
+| 11111111         | // -1 in Two's Complement |
+| ---------------- | ------------------------- |
+| 00000000         | // 0 in binary            |
+| ---------------- | ------------------------- |
 
 In this example, we can see that the negative numbers -5 and -1 are stored in memory using their Two's Complement representations.
 
