@@ -410,6 +410,7 @@ The resulting binary number 11111011 is the Two's Complement representation of -
 Here's a simple visualization of how negative numbers are stored in memory:
 
 | Memory Address   |                           |
+| ---------------- | ------------------------- |
 | 11111011         | // -5 in Two's Complement |
 | 00000101         | // 5 in binary            |
 | 11111111         | // -1 in Two's Complement |
