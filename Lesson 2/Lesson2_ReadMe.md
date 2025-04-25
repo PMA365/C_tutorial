@@ -454,32 +454,34 @@ now we add this to our 5:
 
 Note In digital electronics, there is no such thing as a "binary subtraction" circuit. Instead, subtraction is performed using an adder circuit with a full inverter.
 
-+---------------+ +------------------+  
- | Minuend (A) | | Subtrahend (~B) |
+```bash
 +---------------+ +------------------+
-| |
-| |
-| |
-| |
-v v
-+-------------------+
-| NOT Gate |
-| (~B) |
-+-------------------+  
-|
-|
-v
+| Minuend (A)   | | Subtrahend (~B)  |
++---------------+ +------------------+
+|                       |
+|                       |
+|                       |
+|                       |
+|                       v
+|                  +-------------------+
+|                  | NOT Gate |
+|                  | (~B) |
+|                  +-------------------+
+|                       |
+|                       |
+v                       v
 
-+-------------------------------------+
-| Full Adder |
-| (A + ~B) |
 +--------------------------------------+
-|
-|
-v
+|             Full Adder               |
+| (A           +       ~B)             |
++--------------------------------------+
+          |
+          |
+          v
 +---------------+
 | Result (A-B) |
 +---------------+
+```
 
 how negative numbers stored in memory in c program :
 for example : -5 in two's complement:
