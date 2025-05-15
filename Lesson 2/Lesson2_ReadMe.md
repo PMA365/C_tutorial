@@ -118,7 +118,7 @@ We put a 0(zero) at start of the number to tell the compiler its Octal number.
 | ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | 0377         | 255                | In octal, the highest digit is 7. The number 0377 represents the maximum value that can be stored in 3 octal digits (3 bits per digit). |
 
-Maximom decimal dor char = 255
+Maximum decimal for char = 255
 Its equel to 0377 in Octal
 
 ```c
