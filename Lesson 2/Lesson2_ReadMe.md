@@ -3,8 +3,6 @@
 Assignment is about How the data will stored in memmory:
 Octal Hexadecimal Symbol and Binary
 
-Here is an example of how little-endian and big-endian memory storage works in C, represented in a visual table using Markdown:
-
 ```C
 short a;
 a = 25;
@@ -65,7 +63,7 @@ To convert the decimal number 83 to its octal (base-8) equivalent, follow these 
 Step 1: Divide the number by 8
 Divide the decimal number by 8 and record the quotient and the remainder.
 
-[ 83 \div 8 = 10 \quad \text{with a remainder of} \ 3 ]
+[ 83 \ 8 = 10 ]
 
 Quotient: 10
 
@@ -74,7 +72,7 @@ Quotient: 10
 Step 2: Divide the quotient by 8
 Take the quotient from the previous step (10) and divide it by 8.
 
-[ 10 \div 8 = 1 \quad \text{with a remainder of} \ 2 ]
+[ 10 \ 8 = 1 ,remainder of = 2 ]
 
 Quotient: 1
 
@@ -83,7 +81,7 @@ Quotient: 1
 Step 3: Divide the quotient by 8 again
 Take the quotient from the previous step (1) and divide it by 8.
 
-[ 1 \div 8 = 0 \quad \text{with a remainder of} \ 1 ]
+[ 1 \ 8 = 0 ,remainder of = 1 ]
 
 Quotient: 0
 
@@ -112,9 +110,6 @@ char a;
 
 a = 0123
 
-char b;
-
-b = 0377
 ```
 
 We put a 0(zero) at start of the number to tell the compiler its Octal number.
@@ -122,6 +117,15 @@ We put a 0(zero) at start of the number to tell the compiler its Octal number.
 | Octal Number | Decimal Equivalent | Explanation                                                                                                                             |
 | ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | 0377         | 255                | In octal, the highest digit is 7. The number 0377 represents the maximum value that can be stored in 3 octal digits (3 bits per digit). |
+
+Maximom decimal dor char = 255
+Its equel to 0377 in Octal
+
+```c
+char b;
+
+b = 0377
+```
 
 In octal, each digit can have 8 values (0-7). The highest number that can be represented with 3 octal digits is 377, which is equivalent to 255 in decimal. This is because:
 
